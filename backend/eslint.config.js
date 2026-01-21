@@ -5,7 +5,7 @@ import configPrettier from 'eslint-config-prettier';
 
 export default [
   {
-    files: ['src/**/*.ts', 'tests/**/*.ts'],
+    files: ['src/**/*.ts', 'tests/**/*.ts', '**/*.d.ts'], // Add **/*.d.ts
     languageOptions: {
       parser,
       parserOptions: {
@@ -23,7 +23,7 @@ export default [
     }
   },
   {
-    files: ['*.config.ts', 'knexfile.ts'],
+    files: ['*.config.ts', 'knexfile.ts', '**/*.d.ts'], // Add **/*.d.ts here too
     languageOptions: {
       parser,
       parserOptions: {
