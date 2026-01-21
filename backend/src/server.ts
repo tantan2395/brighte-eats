@@ -10,7 +10,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use('/graphql', createHandler({ schema, rootValue: resolvers }))
+app.use('/graphql', createHandler({ schema, rootValue: resolvers }));
 
 app.get('/', (req, res) => {
   res.send('Hello World');
