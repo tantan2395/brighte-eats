@@ -4,7 +4,9 @@
         "module": "NodeNext",
         "moduleResolution": "NodeNext",
         "outDir": "dist",
-        "rootDir": "src",
+        "rootDirs": [
+            "."
+        ],
         "strict": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
@@ -13,9 +15,11 @@
         "noImplicitAny": true
     },
     "include": [
-        "src",
-        "knexfile.ts",
-        "tests"
+        "**/*.ts",
+        "src/**/*.ts",
+        "knexfile.d.ts",
+        "knexfile.js",
+        "src/db/migrations/*.js"
     ],
     "exclude": [
         "node_modules",
